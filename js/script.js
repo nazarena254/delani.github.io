@@ -13,7 +13,8 @@ $(document).ready(function(){
           $("#design").slideUp('1500');
           $("#design-image").slideDown('1500');
         });
-      });    
+      });
+    
     $(document).ready(function(){    
         $("#development-image").click(function(){
           $("#development-image").slideDown('1500').hide('1000');
@@ -24,6 +25,7 @@ $(document).ready(function(){
           $("#development-image").slideDown('1500');
         });
       });
+      
       $(document).ready(function(){
         $("#product-image").click(function(){
           $("#product-image").slideDown('1500').hide('1000');
@@ -33,8 +35,8 @@ $(document).ready(function(){
           $("#product").slideUp('1500');
           $("#product-image").slideDown('1500');
         });
-      })
-
+      });
+      
       $(document).ready(function(){
         // up on moving the mouse over portfolio image,
         // then will the name of the project on grey background color show
@@ -81,4 +83,27 @@ $(document).ready(function(){
         }).mouseout(function(){
           $("#overlay8").hide();
         });
-      });  
+      });
+      
+    
+      $(document).ready(function(){
+        $("form#form34A").submit(function(event){
+          event.preventDefault();
+          var name = $("input#username").val();
+          var email = $("input#useremail").val();
+          var message = $("textarea#comment").val();
+          if ($("input#username").val() && $("input#useremail").val()){
+            // document.querySelector(".btn").addEventListener('click', function(){
+                Swal.fire("Hey "+name + ", we got your message. Thank you.");
+            //});
+    
+            // alert ("Hey "+name + "!!! we got your message... Thank you.");
+    
+            // document.getElementById("feedback").innerHTML = 
+            // "Hey "+name + "n\!!! we got your message... Thank you."
+          }
+          else {
+            alert("Please enter your name and email!");
+          }      
+        });  
+      });
