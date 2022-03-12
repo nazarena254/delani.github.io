@@ -1,0 +1,261 @@
+
+body{
+    font-family: 'Poppins', sans-serif; 
+}
+html{
+  scroll-behavior: smooth;
+}
+.landing{
+  background-image: url('../images/backgrounds/h_img.jpg');
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  padding-top:17%; 
+}
+.landing h1{
+  padding: 2px;
+  margin: 5px;
+  letter-spacing: 2px;
+}
+.landing p{
+  padding: 2px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+#logo{
+  margin-top: 12px;
+  margin-bottom: 24px;
+  width: 70px;
+  height: 70px;;
+}
+#mouse-click{
+  padding-top : 22px;
+  margin-top: 10%;
+  padding-bottom: 30px; 
+}
+#mouse-click {
+  animation: bounce 2s infinite;
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0);}
+  40% {transform: translateY(-60px);}
+  60% {transform: translateY(-50px);}
+}
+
+.about{
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top:40px;
+}
+
+.services{
+  text-align: center;
+  background-image: url("../images/backgrounds/s_image.jpg");
+  color: white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 18px;
+}
+
+#servicesoverlay{
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+.what-we-do{
+  text-align: center;
+  padding-top: 40px;
+
+}
+.what-we-do .heading1{
+  padding-bottom: 38px;
+}
+#portfolio{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left:18%;
+  margin-right: 16%; 
+}
+.col-md-3 img{
+  max-width: 100%;
+  max-height: 100%;
+}
+.portfolio h2{
+  text-align: center;
+  padding-top:40px;
+}
+.contact{
+  background-image: url('../images/backgrounds/c_image.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+.title{
+  padding: 6px;
+}
+.contact h2{
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+input[type=text],input[type=email],#message{
+  background: transparent;
+  color: white;
+  font-size: 18px;
+}
+
+.form-control::-webkit-input-placeholder { 
+  color: rgb(225, 227, 230); 
+}
+
+#username{
+  width: 30%;
+  margin-left: 20%;
+  margin-right: 28px;
+}
+#useremail{
+  width: 28%;
+}
+#message{
+  margin-left: 20%;
+  width: 60%;
+}
+button{
+  margin-left: 20%;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+}
+footer{
+  text-align: center;
+  padding-top: 30px;
+}
+footer p{
+  margin-top: 10px;
+}
+#product, #development, #design{
+  display: none;
+  font-size: 16px;
+}
+#product .title, #development .title, #design .title{
+  font-size: 20px;
+  font-weight: 600;
+}
+#overlay,#overlay2,#overlay3,#overlay4,#overlay5,#overlay6,#overlay7,#overlay8{
+  display: none;
+  color: black;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(255, 255, 255, 0.384);
+  position:absolute;
+  top: 20px;
+  left: 35px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 50%;
+}
+#feedback{
+    color: rgb(46, 127, 219);
+    text-align: center;
+    font-weight: 200;
+}
+@media only screen and (max-width: 755px){
+  #overlay,#overlay2,#overlay3,#overlay4,#overlay5,#overlay6,#overlay7,#overlay8{
+    width: 100%;
+    height: 100%;
+    top: 20px;
+    left: 16px;
+    padding-top: 20%;
+  }
+  .col-md-3 img{
+    width:100%px;
+    margin: 20px;
+  }
+  #portfolio{
+    margin-left:8%;
+    margin-right: 16%; 
+  }
+  button{
+    margin-left: 2%;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 425px){
+    #overlay,#overlay2,#overlay3,#overlay4,#overlay5,#overlay6,#overlay7,#overlay8{
+        width: 100%;
+        height: 100%;
+        top: 20px;
+        left: 16px;
+        padding-top: 20%;
+        font-size: 20px;
+    }
+    .col-md-3 img{
+        width:100%px;
+        margin: 20px;
+    }
+    #portfolio{
+        margin-left:8%;
+        margin-right: 16%; 
+    }
+    button{
+        padding-bottom: 30px;
+        margin-bottom: 20px;
+    }
+    #useremail{
+        width: 84%;
+        margin-left: 4%;
+        padding-bottom: 10px;
+    }
+    #username{
+        width: 100%;
+        margin-left: 4%;
+        margin-bottom: 20px;
+    }
+    #message{
+        margin-left: 4%;
+        width: 84%;
+    }
+}
+@media only screen and (min-width: 825px){
+    #overlay,#overlay2,#overlay3,#overlay4,#overlay5,#overlay6,#overlay7,#overlay8{
+        width: 100%;
+        height: 100%;
+        top: 20px;
+        left: 20px;
+        padding-top:30%; 
+    }
+    .col-md-3 img{
+        width: 400px;
+        margin: 20px;
+    }
+    #portfolio{
+        margin-left:10%;
+        margin-right: 10%; 
+    }
+}
+@media only screen and (min-width: 625px){
+  #overlay,#overlay2,#overlay3,#overlay4,#overlay5,#overlay6,#overlay7,#overlay8{
+        width: 100%;
+        height: 100%;
+        top: 20px;
+        left: 20px;
+        padding-top:20%; 
+        font-size: 26px;
+    }
+    .col-md-3 img{
+        width: 400px;
+        margin: 20px;
+    }
+    #portfolio{
+        margin-left:6%;
+        margin-right: 10%; 
+    }
+}
