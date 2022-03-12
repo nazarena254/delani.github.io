@@ -1,6 +1,6 @@
 
-// When Html document is loaded then will jQuery function be available/executed.
-$(document).ready(function(){
+    // When Html document is loaded then will jQuery function be available/executed.
+   $(document).ready(function(){
     // up on clicking design image, the image will slide down in 1.5 seconds and hide itself in 1 second,
     // then the design paragraph will show.
         $("#design-image").click(function(){
@@ -37,7 +37,8 @@ $(document).ready(function(){
         });
       });
       
-      $(document).ready(function(){
+      
+    $(document).ready(function(){
         // up on moving the mouse over portfolio image,
         // then will the name of the project on grey background color show
         $("#work1").mouseover(function(){
@@ -87,12 +88,14 @@ $(document).ready(function(){
       
     
       $(document).ready(function(){
-        $("form#form34A").submit(function(event){
+        //the method stops default action of an element from happening
+        $("form#form34A").submit(function(event){ 
           event.preventDefault();
           var name = $("input#username").val();
           var email = $("input#useremail").val();
           var message = $("textarea#comment").val();
-          if ($("input#username").val() && $("input#useremail").val()){
+          //when we have user's name, email & message, alert the user that we have received his\her message.
+          if ($("input#username").val() && $("input#useremail").val() && $("textarea#message").val() ){
             // document.querySelector(".btn").addEventListener('click', function(){
                 Swal.fire("Hey "+name + ", we got your message. Thank you.");
             //});
@@ -103,7 +106,7 @@ $(document).ready(function(){
             // "Hey "+name + "n\!!! we got your message... Thank you."
           }
           else {
-            alert("Please enter your name and email!");
+            alert("Please fill in your name, email and message!");
           }      
         });  
       });
