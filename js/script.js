@@ -13,8 +13,7 @@ $(document).ready(function(){
           $("#design").slideUp('1500');
           $("#design-image").slideDown('1500');
         });
-      });
-    
+      });    
     $(document).ready(function(){    
         $("#development-image").click(function(){
           $("#development-image").slideDown('1500').hide('1000');
@@ -25,7 +24,6 @@ $(document).ready(function(){
           $("#development-image").slideDown('1500');
         });
       });
-      
       $(document).ready(function(){
         $("#product-image").click(function(){
           $("#product-image").slideDown('1500').hide('1000');
@@ -36,3 +34,51 @@ $(document).ready(function(){
           $("#product-image").slideDown('1500');
         });
       })
+
+      $(document).ready(function(){
+        // up on moving the mouse over portfolio image,
+        // then will the name of the project on grey background color show
+        $("#work1").mouseover(function(){
+          $("#overlay").show();
+        })
+        // up on moving the mouse out of portfolio image,
+        // then will the name of the project on grey background color hide
+        .mouseout(function(){
+          $("#overlay").hide();
+        });
+        $("#work2").mouseover(function(){
+          $("#overlay2").show();
+        }).mouseout(function(){
+          $("#overlay2").hide();
+        });
+        $("#work3").mouseover(function(){
+          $("#overlay3").show();
+        }).mouseout(function(){
+          $("#overlay3").hide();
+        });
+        $("#work4").mouseover(function(){
+          $("#overlay4").show();
+        }).mouseout(function(){
+          $("#overlay4").hide();
+        });
+        $("#work5").mouseover(function(){
+          $("#overlay5").show();
+        }).mouseout(function(){
+          $("#overlay5").hide();
+        });
+        $("#work6").mouseover(function(){
+          $("#overlay6").show();
+        }).mouseout(function(){
+          $("#overlay6").hide();
+        });
+        $("#work7").mouseover(function(){
+          $("#overlay7").show();
+        }).mouseout(function(){
+          $("#overlay7").hide();
+        });
+        $("#work8").mouseover(function(){
+          $("#overlay8").show();
+        }).mouseout(function(){
+          $("#overlay8").hide();
+        });
+      });  
